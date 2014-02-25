@@ -1,0 +1,275 @@
+html {
+  height: 100%;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: Open Sans, sans-serif;
+  background: linear-gradient(rgb(250, 250, 250), rgb(220, 220, 220)) fixed;
+}
+
+#infoPanel {
+  height: 45px;
+  background: #353535;
+  border-bottom: 3px solid #aaa;
+  font-size: 20px;
+  color: #b0d66d;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+#winsInfo {
+  position: absolute;
+  top: 9px;
+  left: 50%;
+  margin-left: -60px;
+  width: 120px;
+  text-align: center;
+}
+
+#playerMoneyDisplay, #playerWinsDisplay, #dealerWinsDisplay {
+  padding: 0px 4px 0px 4px;
+  border: 1px solid #444;
+  border-radius: 3px;
+  box-shadow: 0px 0px 2px 0px black;
+}
+
+#playerMoneyDisplay {
+  position: absolute;
+  top: 8px;
+  left: 25%;
+}
+
+#dealerWinsDisplay {
+  color: hsl(0, 80%, 65%);
+}
+
+#rulesLink {
+  position: absolute;
+  top: 8px;
+  right: 25%;
+  color: #bbb;
+  cursor: pointer;
+}
+
+#rulesLink:hover {
+  color: white;
+}
+
+#mainContainer {
+  position: relative;
+  height: 800px;
+}
+
+#header {
+  margin: auto;
+  margin-top: 20px;
+  width: 200px;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+#cardTable {
+  position: relative;
+  margin: auto;
+  margin-top: 30px;
+  width: 680px;
+  height: 465px;
+  background: linear-gradient(hsl(130, 40%, 40%), hsl(130, 40%, 20%));
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.8);
+  border-radius: 2px;
+}
+
+#dhLabel {
+  position: absolute;
+  top: 4px;
+  left: 21px;
+  font-size: 14px;
+  color: white;
+  text-shadow: 0px 0px 1px white;
+}
+
+#dealerHand {
+  position: relative;
+  margin: auto;
+  top: 25px;
+  width: 635px;
+  height: 172px;
+  padding: 2px;
+  border: 2px solid white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px 0px white;
+}
+
+#phLabel {
+  position: absolute;
+  top: 238px;
+  font-size: 14px;
+  color: white;
+  text-shadow: 0px 0px 1px white;
+  left: 21px;
+}
+
+#playerHand {
+  position: relative;
+  margin: auto;
+  top: 80px;
+  width: 635px;
+  height: 172px;
+  padding: 2px;
+  border: 2px solid white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px 0px white;
+}
+
+.card {
+  margin: 5px;
+  width: 115px;
+  height: 160px;
+  line-height: 160px;
+  text-align: center;
+  background: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px 0px black;
+  cursor: default;
+  float: left;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+#holeCard {
+  margin: 5px;
+  width: 115px;
+  height: 160px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px 0px black;
+  cursor: default;
+  float: left;
+}
+
+.card > span {
+  font-family: serif;
+  font-size: 46px;
+}
+
+.clubs, .spades {
+  text-shadow: 0px 0px 2px black;
+}
+
+.diams, .hearts {
+  color: red;
+  text-shadow: 0px 0px 2px red;
+}
+
+button {
+  font-family: Open Sans, sans-serif;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4)
+}
+
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+#buttons {
+  position: relative;
+  top: 20px;
+  margin: auto;
+  width: 220px;
+  text-align: center;
+}
+
+#hitButton, #standButton {
+  width: 90px;
+  font-size: 20px;
+}
+
+#hitButton:disabled, #standButton:disabled {
+  opacity: 0.5;
+}
+
+#greetingPanel, #rulesPanel, #betPanel, #outcomePanel, #resetPanel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -155px;
+  margin-left: -135px;
+  width: 250px;
+  padding: 8px;
+  background: white;
+  border: 2px solid #333;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4)
+}
+
+#greetingPanel {
+  width: 350px;
+  margin-left: -185px;
+}
+
+#rulesPanel {
+  top: 125px;
+  margin-top: 0px;
+  width: 750px;
+  margin-left: -385px;
+  z-index: 1;
+}
+
+#betPanel {
+  height: 120px;
+}
+
+#closeRulesPanelButton, #playButton, #betButton, #outcomePanel > button, #resetGameButton {
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+#playButton {
+  margin-top: 15px;
+}
+
+#betImgContainer {
+  position: absolute;
+  top: 36%;
+  left: 21%;
+  cursor: default;
+}
+
+#betImgContainer > img {
+  border: 1px solid transparent;
+  border-radius: 50px;
+}
+
+#betImgContainer > img:hover {
+  border: 1px solid #444;
+}
+
+#betDisplay {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  margin-left: -22px;
+  width: 40px;
+  height: 25px;
+  padding-right: 1px;
+  padding-top: 1px;
+  line-height: 25px;
+  text-align: center;
+  border: 1px solid #444;
+  border-radius: 5px;
+  cursor: default;
+}
+
+#betButton {
+  margin-top: 68px;
+}

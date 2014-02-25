@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Blackjack</title>
+    <meta charset="utf-8">
+    <link href="blackjack.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans"
+          rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    
+    <div id="infoPanel">
+      <span id="playerMoneyDisplay"></span>
+      <div id="winsInfo">
+        <span id="playerWinsDisplay"></span>
+        <span id="dealerWinsDisplay"></span>
+      </div>
+      <span id="rulesLink">Rules</span>
+    </div>
+    
+    <div id="mainContainer">
+      <h1 id="header">Blackjack</h1>
+      <div id="cardTable">
+        <span id="dhLabel">Dealer hand</span>
+        <div id="dealerHand"></div>
+        <span id="phLabel">Player hand</span>
+        <div id="playerHand"></div>
+      </div>
+      <div id="buttons">
+        <button id="hitButton" disabled>Hit</button>
+        <button id="standButton" disabled>Stand</button>
+      </div>
+    </div>
+    
+    <!-- Information panels -->
+    <div id="greetingPanel">
+      <span>Welcome to the Blackjack table! Click the 'Play' button below to begin
+      the game. Click on 'Rules' at the top of the screen for information about the game.</span>
+      <br>
+      <button id="playButton">Play</button>
+    </div>
+    
+    <div id="rulesPanel">
+      <span>
+        Blackjack is a table and card game played with decks of playing cards where the goal is to score
+        higher than the dealer without exceeding 21.
+      </span>
+      <br>
+      <br>
+      <span>
+        Each round, the player and the dealer are dealt two cards each. One of the dealer's cards will
+        remain face down until the dealer's hand is later resolved. After being dealt the first two cards, the
+        player can either hit or stand. To hit is to be dealt another card. To stand is to end your turn. As
+        the player, you want the cards in your hand to total more than the cards in the dealer's hand without
+        exceeding 21. Number cards count as their natural value. Face cards (jacks, queens, and kings) count
+        as 10 points. Aces count as 11 points. A hand of two aces or an ace along with a ten or any face card
+        is blackjack and wins against anything that isn't blackjack. Your hand totalling more than 21
+        points is known as busting. If your hand busts, you immediately lose the round. You will hit until
+        you are satisifed with your hand at which time you will stand. After standing, the dealer will resolve
+        his or her hand by dealing into it cards until it totals 17 or more. If neither of the hands
+        have busted, then the one with the highest score wins the round. If the hands are tied, the round is
+        a push and neither hand wins. Your wins and losses are tracked at the top of the screen. After a
+        round, the dealer will collect and discard the cards that are on the table and then begin dealing
+        again. The dealer will combine the cards and reshuffle after dealing five hands.
+      </span>
+      <br>
+      <br>
+      <span>
+        Before each round, you will bet an amount of money that your hand will beat the dealer's. If you win a
+        round, you will receive from the dealer an amount equal to twice your bet. If the round
+        is a push, the dealer will return to you your bet. If you lose the round, the dealer will take your bet.
+        Your money is tracked at the top of the screen.
+      </span>
+      <br>
+      <br>
+      <span>This is a single-deck table. This table also does not currently allow splitting, doubling,
+        surrendering, or insurance.</span>
+      <button id="closeRulesPanelButton">Righto</button>
+    </div>
+    
+    <div id="betPanel">
+      <span>How much would you like to bet?</span>
+      <div id="betImgContainer">
+        <img src="images/up.png" width="20px" height="20px">
+        <img src="images/down.png" width="20px" height="20px">
+      </div>
+      <div id="betDisplay"><span></span></div>
+      <button id="betButton">Bet</button>
+    </div>
+    
+    <div id="outcomePanel">
+      <span></span>
+      <button id="nextRoundButton">Next round</button>
+    </div>
+    
+    <div id="resetPanel">
+      <span>You have run out of money. Click the 'Reset' button below to reset the game.</span>
+      <button id="resetGameButton">Reset game</button>
+    </div>
+    <!-- End of panels -->
+    
+    <script src="blackjack.js"></script>
+    
+  </body>
+</html>
