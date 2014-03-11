@@ -347,6 +347,10 @@ shuffleDeck();
 updateWinsDisplay();
 showGreetingPanel();
 
+// Preload the card back image
+var cardBackImage = new Image();
+cardBackImage.src = "images/back.png";
+
 // Initial update to the player money display.
 document.getElementById("playerMoneyDisplay").innerHTML = "$" + playerMoney;
 
