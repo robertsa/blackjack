@@ -9,7 +9,7 @@ The game's current set of rules is outlined within.
 
 
 Possible additions
-==================
+------------------
 
 Add splitting
 Add doubling
