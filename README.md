@@ -11,8 +11,8 @@ The game's current set of rules is outlined within.
 Possible additions
 ------------------
 
-Add splitting
-Add doubling
-Add surrendering
-Add minimum and maximum bets
-Make blackjack pay 3 to 2
+* Add splitting
+* Add doubling
+* Add surrendering
+* Add minimum and maximum bets
+* Make blackjack pay 3 to 2
